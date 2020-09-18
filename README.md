@@ -8,7 +8,7 @@
 
   
 # Codebook_builder.R:
-# Writes a code book for data set with the list and description of the variables, writes a file 
+# Writes a code book for data set with the list and description of the variables, writes a file UCI_HAR_dataset_codebook.txt
 # UCI HAR Dataset can be found in the following links:
 # https://archive.ics.uci.edu/ml/machine-learning-databases/00240/
 # https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones#
