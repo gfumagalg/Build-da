@@ -1,0 +1,293 @@
+
+
+ 
+DATA DICTIONARY   -   UCI HAR Dataset
+ Mean and standard deviation values
+ 
+ 
+Column  Variable
+        Variable values range
+        Number of digits
+ 
+ 
+1       Participant Number                                
+	     1 .. 30    
+	 2
+
+2       Group                                             
+	     1 .. 2     
+	 1
+
+3       Activity                                          
+	WALKING
+	WALKING_UPSTAIRS
+	WALKING_DOWNSTAIRS
+	SITTING
+	STANDING
+	LAYING
+	18
+
+4       Time Body Accelerometer MEAN X                    
+	0.2216 .. 0.3015
+	17
+
+5       Time Body Accelerometer MEAN Y                    
+	-0.0405 .. -0.0013
+	20
+
+6       Time Body Accelerometer MEAN Z                    
+	-0.1525 .. -0.0754
+	19
+
+7       Time Body Accelerometer STD X                     
+	-0.9961 .. 0.6269
+	20
+
+8       Time Body Accelerometer STD Y                     
+	-0.9902 .. 0.6169
+	20
+
+9       Time Body Accelerometer STD Z                     
+	-0.9877 .. 0.609 
+	20
+
+10      Time Gravity Accelerometer MEAN X                 
+	 -0.68 .. 0.9745
+	18
+
+11      Time Gravity Accelerometer MEAN Y                 
+	-0.4799 .. 0.9566
+	19
+
+12      Time Gravity Accelerometer MEAN Z                 
+	-0.4951 .. 0.9579
+	20
+
+13      Time Gravity Accelerometer STD X                  
+	-0.9968 .. -0.8296
+	18
+
+14      Time Gravity Accelerometer STD Y                  
+	-0.9942 .. -0.6436
+	18
+
+15      Time Gravity Accelerometer STD Z                  
+	-0.991 .. -0.6102
+	18
+
+16      Time Body Accelerometer Jerk MEAN X               
+	0.0427 .. 0.1302
+	18
+
+17      Time Body Accelerometer Jerk MEAN Y               
+	-0.0387 .. 0.0568
+	21
+
+18      Time Body Accelerometer Jerk MEAN Z               
+	-0.0675 .. 0.0381
+	21
+
+19      Time Body Accelerometer Jerk STD X                
+	-0.9946 .. 0.5443
+	20
+
+20      Time Body Accelerometer Jerk STD Y                
+	-0.9895 .. 0.3553
+	19
+
+21      Time Body Accelerometer Jerk STD Z                
+	-0.9933 .. 0.031 
+	19
+
+22      Time Body Gyroscope MEAN X                        
+	-0.2058 .. 0.1927
+	20
+
+23      Time Body Gyroscope MEAN Y                        
+	-0.2042 .. 0.0275
+	20
+
+24      Time Body Gyroscope MEAN Z                        
+	-0.0725 .. 0.1791
+	21
+
+25      Time Body Gyroscope STD X                         
+	-0.9943 .. 0.2677
+	19
+
+26      Time Body Gyroscope STD Y                         
+	-0.9942 .. 0.4765
+	19
+
+27      Time Body Gyroscope STD Z                         
+	-0.9855 .. 0.5649
+	19
+
+28      Time Body Gyroscope Jerk MEAN X                   
+	-0.1572 .. -0.0221
+	19
+
+29      Time Body Gyroscope Jerk MEAN Y                   
+	-0.0768 .. -0.0132
+	19
+
+30      Time Body Gyroscope Jerk MEAN Z                   
+	-0.0925 .. -0.0069
+	20
+
+31      Time Body Gyroscope Jerk STD X                    
+	-0.9965 .. 0.1791
+	18
+
+32      Time Body Gyroscope Jerk STD Y                    
+	-0.9971 .. 0.2959
+	19
+
+33      Time Body Gyroscope Jerk STD Z                    
+	-0.9954 .. 0.1932
+	19
+
+34      Time Body Accelerometer Magnitude MEAN            
+	-0.9865 .. 0.6446
+	21
+
+35      Time Body Accelerometer Magnitude STD             
+	-0.9865 .. 0.4284
+	19
+
+36      Time Gravity Accelerometer Magnitude MEAN         
+	-0.9865 .. 0.6446
+	21
+
+37      Time Gravity Accelerometer Magnitude STD          
+	-0.9865 .. 0.4284
+	19
+
+38      Time Body Accelerometer Jerk Magnitude MEAN       
+	-0.9928 .. 0.4345
+	19
+
+39      Time Body Accelerometer Jerk Magnitude STD        
+	-0.9946 .. 0.4506
+	19
+
+40      Time Body Gyroscope Magnitude MEAN                
+	-0.9807 .. 0.418 
+	19
+
+41      Time Body Gyroscope Magnitude STD                 
+	-0.9814 .. 0.3   
+	19
+
+42      Time Body Gyroscope Jerk Magnitude MEAN           
+	-0.9973 .. 0.0876
+	19
+
+43      Time Body Gyroscope Jerk Magnitude STD            
+	-0.9977 .. 0.2502
+	19
+
+44      Frequency Body Accelerometer MEAN X               
+	-0.9952 .. 0.537 
+	19
+
+45      Frequency Body Accelerometer MEAN Y               
+	-0.989 .. 0.5242
+	20
+
+46      Frequency Body Accelerometer MEAN Z               
+	-0.9895 .. 0.2807
+	19
+
+47      Frequency Body Accelerometer STD X                
+	-0.9966 .. 0.6585
+	20
+
+48      Frequency Body Accelerometer STD Y                
+	-0.9907 .. 0.5602
+	20
+
+49      Frequency Body Accelerometer STD Z                
+	-0.9872 .. 0.6871
+	19
+
+50      Frequency Body Accelerometer Jerk MEAN X          
+	-0.9946 .. 0.4743
+	20
+
+51      Frequency Body Accelerometer Jerk MEAN Y          
+	-0.9894 .. 0.2767
+	20
+
+52      Frequency Body Accelerometer Jerk MEAN Z          
+	-0.992 .. 0.1578
+	19
+
+53      Frequency Body Accelerometer Jerk STD X           
+	-0.9951 .. 0.4768
+	20
+
+54      Frequency Body Accelerometer Jerk STD Y           
+	-0.9905 .. 0.3498
+	20
+
+55      Frequency Body Accelerometer Jerk STD Z           
+	-0.9931 .. -0.0062
+	20
+
+56      Frequency Body Gyroscope MEAN X                   
+	-0.9931 .. 0.475 
+	19
+
+57      Frequency Body Gyroscope MEAN Y                   
+	-0.994 .. 0.3288
+	19
+
+58      Frequency Body Gyroscope MEAN Z                   
+	-0.986 .. 0.4924
+	19
+
+59      Frequency Body Gyroscope STD X                    
+	-0.9947 .. 0.1966
+	18
+
+60      Frequency Body Gyroscope STD Y                    
+	-0.9944 .. 0.6462
+	19
+
+61      Frequency Body Gyroscope STD Z                    
+	-0.9867 .. 0.5225
+	19
+
+62      Frequency Body Accelerometer Magnitude MEAN       
+	-0.9868 .. 0.5866
+	20
+
+63      Frequency Body Accelerometer Magnitude STD        
+	-0.9876 .. 0.1787
+	20
+
+64      Frequency Body BodyAccelerometer Jerk Magnitude MEAN 
+	-0.994 .. 0.5384
+	20
+
+65      Frequency Body BodyAccelerometer Jerk Magnitude STD 
+	-0.9944 .. 0.3163
+	19
+
+66      Frequency Body BodyGyroscope Magnitude MEAN       
+	-0.9865 .. 0.204 
+	20
+
+67      Frequency Body BodyGyroscope Magnitude STD        
+	-0.9815 .. 0.2367
+	18
+
+68      Frequency Body BodyGyroscope Jerk Magnitude MEAN  
+	-0.9976 .. 0.1466
+	19
+
+69      Frequency Body BodyGyroscope Jerk Magnitude STD   
+	-0.9976 .. 0.2878
+	19
+

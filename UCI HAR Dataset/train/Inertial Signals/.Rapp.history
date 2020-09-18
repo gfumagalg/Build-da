@@ -1,0 +1,250 @@
+0
+quit()
+install.packages("swirl")
+swirl::install_course("Getting and Cleaning Data")
+library("swirl")
+swirl()
+mydf <- read.csv(path2csv, stringsAsFactors = TRUE)
+mydf <- read.csv(path2csv, stringsAsFactors = FALSE)
+dim(mydf)
+head(mydf)
+library(dplyr)
+packageVersion("dplyr")
+cran <- tbl_df(mydf)
+rm("mydf")
+cran
+swirl()
+cran
+?select
+select(cran, ip_id, package, country)
+5:20
+select(cran, r_arch:country)
+select(cran, country:r_arch)
+cran
+select(cran, -time)
+select(cran, -X:size)
+select(cran, -(X:size))
+select(cran, -X:size)
+-5.20
+-5:20
+-(5:20)
+select(cran, -(X:size))
+filter(cran, package == "swirl")
+filter(cran, r_version == "3.1.1", country == "US")
+?Comparison
+filter(cran, r_version == "3.1.1", country == "IN")
+filter(cran, r_version <= "3.0.2", country == "IN")
+filter(cran, country == "US" | country == "IN")
+filter(cran, size >= 100500 | r_os == "linux-gnu")
+filter(cran, size > 100500 | r_os == "linux-gnu")
+filter(cran, size > 100500, r_os == "linux-gnu")
+quit()
+install.packagaes("swirl")
+install.packages("swirl")
+swirl::install_course("Getting and Cleaning Data")
+library(swirl)
+swirl()
+?read.csv
+swirl()
+mydf <- read.csv(path2csv, stringsAsFactors = FALSE)
+dim(mydf)
+head(mydf)
+swirl()
+library(dplyr)
+packageVersion("dplyr")
+cran <- tbl_df(mydf)
+rm("mydf")
+cran
+swirl()
+cran
+?select
+select(cran, ip_id, package, country)
+5:20
+select(cran, r_arch:country)
+select(cran, country:r_arch)
+cran
+select(cran, -time)
+select(cran, -(X:size))
+-5:20
+-(5:20)
+select(cran, -(X:size))
+filter(cran, package == "swirl")
+filter(cran, r_version == "3.1.1", country == "US")
+?Comparison
+filter(cran, r_version <= "3.0.2", country == "IN")
+filter(cran, country == "US" | country == "IN")
+filter(cran, size > 100500, r_os == "linux-gnu")
+is.na(c(3, 5, NA, 10))
+!is.na(c(3, 5, NA, 10))
+filter(cran, is.na(r_version))
+filter(cran, !is.na(r_version))
+cran2 <- select(cran, size:ip_id)
+arrange(cran2, ip_id)
+arrange(cran2, desc(ip_id))
+arrange(cran2, package, ip_id)
+arrange(cran2, country, desc(r_version), ip_id)
+cran3 <- select(cran, ip_id, package, size)
+cran3
+mutate(cran3, size_mb = size / 2^20)
+mutate(cran3, size_gb = size_mb / 2^10)
+cran3
+mutate(cran3, size_mb = size /2^20, size_gb = size_mb / 2^10)
+mutate(cran3, correct_size = size - 1000)
+mutate(cran3, correct_size = size + 1000)
+summarize(cran, avg_bytes = mean(size))
+library(dplyr)
+cran <- tbl_df("mydf")
+cran <- tbl_df(mydf)
+rm("mydf")
+cran
+?group_by
+by_package <- cran %>% group_by(package)
+by_package <- group_by(cran, package)
+by_package
+swirl()
+by_package
+swirl()
+by_package
+swirl()
+by_package
+quit()
+install.packages("swirl")
+library(swirl)
+swirl::install_course("Getting and Cleaning Data")
+swirl()
+library(tidyr)
+students
+?gather
+gather(students, sex, count, -grade)
+students2
+?gather
+res <- gather(students2, key = "sex_class", value = "count")
+res <- gather(students2, sex_class, count, -grade)
+res
+?separate()
+?separate
+separate(res, col = sex_class, into = c(sex, class))
+separate(res, sex_class, c(sex, class))
+separate(res, "sex_class", c(sex, class))
+separate(res, col = "sex_class", into = c(sex, class))
+separate(res, col = "sex_class", into = c("sex", "class"))
+separate(res, sex_class, into = c("sex", "class"))
+submit()
+reset
+reset()
+swirl()
+reset()
+swir()
+swirl()
+submit()
+students3
+submit()
+?spread
+submit()
+library(readr)
+parse_number("class5")
+submit()
+?parse_number
+c("class2","class3","class5","class2")
+parse_number(c("class2","class3","class5","class2"))
+submit()
+students4
+submit()
+unique?
+?unique
+submit()
+passed
+failed
+passed <- mutate(passed, "status" = if (final == A | final == B) {"passed"} else {"failed"})
+passed <- mutate(passed, "status" = if (final == "A" | final == "B") {"passed"} else {"failed"})
+passed <- passed %>% mutate(status = "passed")
+failed <- failed %>% mutate(status = "faied")
+failed <- failed %>% mutate(status = "failed")
+?bind_rows
+bind_rows(passed, failed)
+sat
+swirl()
+library(tidyr)
+students
+?gather
+gather(students, sex, count, -grade)
+students2
+res <- gather(students2, sex_class, count, -grade)
+res
+?separate
+separate(res, col = "sex_class", into = c("sex", "class"))
+separate(res, sex_class, c("sex", "class"))
+submit()
+students3
+submit()
+?spread
+submit()
+library(readr)
+parse_number("class5")
+submit()
+students4
+submit()
+passed
+failed
+passed <- passed %<% mutate(status = "passed")
+passed <- passed %<% mutate(status = "passed") %>%
+passed <- passed %<% mutate(status = "passed")
+library(dplyr)
+passed <- passed %<% mutate(status = "passed")
+library(tydr)
+library(tidyr)
+passed <- passed %<% mutate(status = "passed")
+passed <- passed %>% mutate(status = "passed")
+failed <- failed %>% mutate(status = "failed")
+bind_rows(passed, failed)
+sat
+submit()
+quit()
+ls
+ls()
+wd()
+path <- "/Users/geradomartinfumagalgomez/desktop/Datasciencecoursera/Getting and Cleaning data/Programming Assignment 3/UCI HAR Dataset/train/Inertial Signals/body_acc_x_train.txt"
+library(readr)
+y <- read_table(path, col_names = FALSE, col_types = numeric)
+ls()
+getwd()
+file_name <- "body_acc_x_train.txt"
+y <- read_table(file_name, col_names = FALSE, col_types = numeric)
+file_name <- "/UCI HAR Dataset/train/Inertial Signals/body_acc_x_train.txt"
+y <- read_table(file_name, col_names = FALSE, col_types = numeric)
+file_name <- "/UCI HAR Dataset/train/Inertial Signals/body_acc_x_train.txt"
+y <- read_table(file_name, col_names = FALSE, col_types = numeric)
+file_name <- "body_acc_x_train.txt"
+y <- read_table(file_name, col_names = FALSE, col_types = numeric)
+y <- read_table(file_name, col_names = FALSE)
+class(y)
+names(y)
+y[128]
+dim(y)
+mean(y[7352,])
+class(y$X128)
+head(y[128],20)
+mean(y$X128)
+mean(y[7352,])
+class(head(y[7352,]))
+sum(y[7352,])
+y[7352,1])
+y[7352,1]
+mean(y[7352,], na.rm = TRUE)
+mean(y[7352,])
+?rowMean
+?rowMeans
+rowMeans[y]
+tail(rowMeans(y))
+y[7352,]
+tail(y[7352,],20)
+y[7352,1:20]
+y[7352,100:128]
+y[7352,110:128]
+rowMeans(y)[7352]
+rowMeans(y)[7351]
+rowMeans(y)[7350]
+means_first <- rowMeans(y[1:100])
+means_first
+means_first <- rowMeans(y[1:100,])
+means_first
